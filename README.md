@@ -1,0 +1,1 @@
+# aws-quarkus-lambda-function-url-cdk-plain
