@@ -13,14 +13,15 @@ public interface FunctionURLIntegrations {
     /**
      * Creates a Lambda Function URL integration.
      *
-     * @see <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-urls.html">AWS Lambda Function URLs</a>
+     * @see <a href=
+     *      "https://docs.aws.amazon.com/lambda/latest/dg/lambda-urls.html">AWS Lambda Function URLs</a>
      */
-    static FunctionUrl integrate(Construct scope,IFunction function,List<String> allowOrigin) {
+    static FunctionUrl integrate(Construct scope, IFunction function, List<String> allowOrigin) {
         return FunctionUrl.Builder.create(scope, "FunctionURL")
-        .authType(FunctionUrlAuthType.NONE)
-        .function(function)
-        .invokeMode(InvokeMode.BUFFERED)
-        .build();
+                .authType(FunctionUrlAuthType.NONE)
+                .function(function)
+                .invokeMode(InvokeMode.BUFFERED)
+                .build();
     }
 
 }
