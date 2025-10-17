@@ -21,11 +21,11 @@ public class LambdaFunctionURLStack extends Stack {
         var function = quarkusLambda.getFunction();
         var functionURL = FunctionURLIntegrations.integrate(this, function, allowOrigins);
         var url = functionURL.getUrl();
-        CfnOutput.Builder.create(this, "FunctionURL")
+        CfnOutput.Builder.create(this, "FunctionURLOutput")
             .value(url)
             .description("Lambda Function URL")
             .build();
-        CfnOutput.Builder.create(this, "CurlCommand")
+        CfnOutput.Builder.create(this, "CurlCommandOutput")
             .value("curl  %s/hello".formatted(url))
             .description("Curl command to invoke the function")
             .build();
