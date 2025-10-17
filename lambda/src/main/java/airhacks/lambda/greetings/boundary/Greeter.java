@@ -13,7 +13,7 @@ public class Greeter {
     static System.Logger LOG = System.getLogger(Greeter.class.getName()); 
 
     @Inject
-    @ConfigProperty(defaultValue = "hello, quarkus on AWS", name="message")
+    @ConfigProperty(defaultValue = "hello, Quarkus as Function URL", name="message")
     String message;
     
     public String greetings() {
