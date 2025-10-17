@@ -26,7 +26,7 @@ public class LambdaFunctionURLStack extends Stack {
             .description("Lambda Function URL")
             .build();
         CfnOutput.Builder.create(this, "CurlCommandOutput")
-            .value("curl  %s/hello".formatted(url))
+            .value("curl -i %shello".formatted(url))
             .description("Curl command to invoke the function")
             .build();
     }
