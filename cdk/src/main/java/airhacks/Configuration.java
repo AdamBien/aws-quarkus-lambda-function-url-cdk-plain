@@ -15,7 +15,7 @@ public interface Configuration {
 
     public static StackProps stackProperties(String appName) {
         ZCfg.load(appName);
-        var region = ZCfg.string("stack.props.region",defaultFunctioName);
+        var region = ZCfg.string("stack.props.region",defaultRegion);
         var env = Environment
                 .builder()
                 .region(region)
