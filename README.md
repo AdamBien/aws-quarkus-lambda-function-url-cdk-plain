@@ -18,4 +18,8 @@ System tests are located in `lambda-st` module. Configure the Function URL via `
 
 Environment variables are managed through CDK in `Configuration.java`. CORS origins can be configured via context parameters.
 
+### References
+
+- [BCE Architecture Design Pattern](https://bce.design/) - This project organizes code using the Boundary-Control-Entity pattern
+
 See you at: [airhacks.live](https://airhacks.live)
