@@ -21,5 +21,6 @@ Environment variables are managed through CDK in `Configuration.java`. CORS orig
 ### References
 
 - [BCE Architecture Design Pattern](https://bce.design/) - This project organizes code using the Boundary-Control-Entity pattern
+- This project is a member of [Constructions Cloud](https://constructions.cloud/)
 
 See you at: [airhacks.live](https://airhacks.live)
