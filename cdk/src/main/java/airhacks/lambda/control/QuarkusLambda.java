@@ -62,7 +62,7 @@ public final class QuarkusLambda extends Construct {
     public static IFunction createFunction(Construct scope,String functionZip,String functionName, String functionHandler, Map<String, String> configuration, int memory,
             int timeout,boolean snapStart) {
         return Function.Builder.create(scope, functionName)
-                .runtime(Runtime.JAVA_21)
+                .runtime(Runtime.JAVA_25)
                 .architecture(Architecture.ARM_64)
                 .code(Code.fromAsset(functionZip))
                 .handler(functionHandler)
